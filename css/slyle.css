@@ -630,7 +630,7 @@ font-style: normal;
 }
 .join-item {
     border-radius: 50%;
-transition: fill, background-color 2500ms var(--cubic), transform 2500ms var(--cubic);
+transition: fill, background-color 250ms var(--cubic), transform 250ms var(--cubic);
     /* transition-property: fill, background-color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic); */
