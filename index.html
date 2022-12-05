@@ -391,8 +391,24 @@
     </li>
   </ul>
 </div>
+<!-- Підписатися на розсилку -->
+<div class="footer-sub">
+  <h2 class="join-title">Підпишіться на розсилку</h2>
+  <form name="sub-form">
+    <div class="sub-container">
+      <label class="sub-label">
+        <input class="sub-input" type="email" placeholder="E-mail" name="subscribe-email">
+      </label>
+      <button class="sub-submit" type="submit">Підписатися
+        <svg class="sub-icon" width="24" height="24">
+          <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+        </svg></button>
+    </div>
+  </form>
+</div>
 </div>
     </footer>
+    <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" data-modal-close>
@@ -400,7 +416,60 @@
             <use href="./images/symbol-defs.svg#icon-close-black"></use>
           </svg>
         </button>
+      
+    <!-- Форма вікна -->
+    <form class="feedback-form" name="feedback-form">
+      <div>
+        <h2 class="feedback-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <ul class="feedback-list list">
+          <li class="feedback-item">
+            <label class="feedback-lable">
+              <p class="feedback-text">Ім'я</p>
+              <input class="feedback-input" type="text" name="feedback-name">
+              <svg class="feedback-icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-person-black"></use>
+              </svg>
+            </label>
+          </li>
+          <li class="feedback-item">
+            <label class="feedback-lable">
+              <p class="feedback-text">Телефон</p>
+              <input class="feedback-input" type="tel" name="feedback-tel">
+              <svg class="feedback-icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+              </svg>
+            </label>
+          </li>
+          <li class="feedback-item">
+            <label class="feedback-lable">
+              <p class="feedback-text">Пошта</p>
+              <input class="feedback-input" type="email" name="feedback-email">
+              <svg class="feedback-icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </label>
+          </li>
+          <li class="feedback-item">
+            <label>
+              <p class="feedback-text">Коментар</p>
+              <textarea class="feedback-textarea feedback-input" name="feedback-comment" rows="10"
+                placeholder="Введіть текст"></textarea>
+            </label>
+          </li>
+        </ul>
+       <div class="checkbox">
+        <label class="checkbox-label">
+          <input class="checkbox-input" type="checkbox">
+          <svg class="checkbox-icon" width="16" height="15">
+            <use href="./images/symbol-defs.svg#icon-icon-check"></use>
+          </svg>
+        </label>
+        <p class="checkbox-text">Погоджуюся з розсилкою та приймаю <a class="checkbox-link" href="">Умови договору</a></p>
+       </div>
       </div>
+      <button class="feedback-submit button-primary" type="submit">Відправити</button>
+    </form>
+    </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
