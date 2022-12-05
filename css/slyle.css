@@ -89,12 +89,13 @@ ul {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
 
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
-    display: flex;
-    align-items: center;
+    
 }
 
 
@@ -152,8 +153,9 @@ line-height: 1.2;
     margin-left: auto;
 
 }
-
-
+.header {
+border-bottom: 1px solid #ECECEC;
+}
 .logo-item {
     margin-right: 93px;
 }
@@ -282,6 +284,7 @@ line-height: 1.2;
 
 .feature-link {
         display: flex;
+        margin: -15px;
 }
 
 .icon-feature {
@@ -293,11 +296,8 @@ line-height: 1.2;
 }
 .feature-item{
     width: calc((1170px - (30px*3))/4);
+    margin: 15px;
     }
-
-.feature-item + .feature-item{
-    margin-left: 30px;
-}
 
 .feature-list .title {
     color: var(--title-text-color);
@@ -348,8 +348,10 @@ line-height: 1.2;
 .section  {
      padding-bottom: 94px;
  }
-.work-list:not(:first-child) {
-    margin-left: 30px;
+
+
+.work-list {
+    margin: 15px;
 }
 .section-title {
     color: var(--title-text-color);
@@ -364,6 +366,7 @@ line-height: 1.2;
 .section-info {
     display: flex;
     justify-content: space-between;
+    margin: -15px;
     }
 /* наша команда */
 
@@ -403,6 +406,7 @@ line-height: 1.2;
 .section-about{
     display: flex;
     justify-content: space-between;
+    margin: -15px;
 }
 .section-team .title {
 color: var(--title-text-color);
@@ -412,13 +416,10 @@ font-size: 16px;
 line-height: 1.19;
 }
 
-.section-item:not(:first-child) {
-    display: block;
-    margin-left: 30px;
-    border-radius: 0px 0px 4px 4px;
-    
-}
+
 .section-item {
+    display: block;
+    margin: 15px;
     background-color: var(--white-color);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -514,7 +515,7 @@ line-height: 1.19;
 
 
 
-/* client */
+/* Постійні кліенти */
 .client-title {
     margin-bottom: 50px;
 }
@@ -630,7 +631,7 @@ font-style: normal;
 .join-item {
     border-radius: 50%;
 
-    transition-property: background-color;
+    transition-property: fill, background-color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
 }
@@ -771,10 +772,15 @@ border-radius: 50%;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    margin: -8px;
     
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
+}
+.button-link {
+    display: flex;
+    margin: 8px;
 }
 .button-menu {
     border: none;
@@ -805,10 +811,6 @@ border-radius: 50%;
     background-color: var(--blue-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
    
-}
-.button-link:not(:first-child) {
-    display: flex;
-    margin-left: 8px;
 }
 
 .button-primary {
