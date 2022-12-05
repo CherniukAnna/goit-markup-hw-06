@@ -624,16 +624,16 @@ font-style: normal;
     justify-content: center;
     width: 100%;
 
-    transition-property: fill;
+    /* transition-property: fill;
     transition-duration: 250ms;
-    transition-timing-function: var(--cubic);
+    transition-timing-function: var(--cubic); */
 }
 .join-item {
     border-radius: 50%;
-
-    transition-property: fill, background-color;
+transition: fill, background-color 2500ms var(--cubic), transform 2500ms var(--cubic);
+    /* transition-property: fill, background-color;
     transition-duration: 250ms;
-    transition-timing-function: var(--cubic);
+    transition-timing-function: var(--cubic); */
 }
 .join-item:hover,
 .join-item:focus{
